@@ -1,0 +1,15 @@
+ion-toolbar {
+    --background: #009286;
+    --ion-color-base: transparent !important;
+}
+
+ion-title {
+    color: #fff;
+}
+
+ion-grid {
+    height: 100%;
+}
+ion-row {
+    height: 80%;
+}
