@@ -1,6 +1,7 @@
 # FoodRecipes
-This application provides a dashboard to search for a food.
-Meal details including    
+This application provides a dashboard to search for a meal.
+Meal details (meal card) include name of the dish, image of the dish, video of how to prepare the dish, 
+a list of ingredients, instructions how to prepare the dish.
 
 ## Prerequisites
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6 with Yarn as package manager. 
