@@ -1,15 +1,33 @@
 # FoodRecipes
+This application provides a dashboard to search for a food.
+Meal details including    
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
-Used @angualr/cli version 9.0.5 as angular 7 show lot of deprecation warnings. Used Yarn as package manager here. 
+## Prerequisites
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6 with Yarn as package manager. 
+
+The following tools/frameworks will be needed to run this application successfully:
+* [Node](https://nodejs.org/en/) v10.15.3 or above
+* [Npm](https://www.npmjs.com/) v6.4.1 or above
+* [AngularJS](https://angular.io/) v9.0.6
+* [Ionic v5.0.5](https://ionicframework.com/docs/v1/guide/preface.html)
+* [yarn 1.15.2](https://yarnpkg.com/) optional
+
+## Installation guide
+- Install the above tools.
+- Clone the Repo: `git clone https://github.com/nageswararao-j/food-recipes.git`
+- run yarn install to install all the dependencies.
+- run yarn start
+- open any broswer and go to the link http://localhost:4200/food-recipies/dashboard
+- It should display a food-recipes dashboard application 
 
 ## Development server
 
-Run `yarn serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `yarn start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
 
 ## Build
 
@@ -33,17 +51,22 @@ To get more help on the Yarn use `yarn help` or go check out the [Yarn README](h
 yarn add -D @ionic/angular-toolkit
 yarn add -D @ionic/angular 
 
-## custom-webpack & WireMock Standalone (Not added at the moment)
+## custom-webpack & WireMock Standalone (TODO: Not added at the moment)
 yarn add -D @angular-builders/custom-webpack
 yar add -D wiremock-standalone
 
-## generate modules, services, components in features folder as best practice.
-ng generate service features/ServiceName 
-ng generate module app.routing --flat --module=app 
 
 ## Improvments
-I would like to configure custom webpack to bootstrap wireMock & use proxying middle-wear server to run application in development with mock services.
+- I would like to configure custom webpack to bootstrap wireMock & use proxying middle-wear server to run application in development with mock services.
 But I have to use external API, So I added the  "proxyConfig": "./server/proxy/proxy.config.ts" on ng serve to access that API.
 In general, It is a good practice to start wiremock with webpack before running the dev-server and play with mock scenarios.
 If I don't get readily available API, then I would prefer the webpack & wire mock customisation.
 If you depend on the external APIs to run your application or run integration tests, then it become a chain environment. And you never know when your application or running of integration test will fail during the build pipelines.
+- Interceptors
+- Unit test
+- Integration tests
+- e2e tests
+- Router guards
+- Stop refreshing video when refreshing the random meal.
+- Cancel search 
+- Routes extractoin

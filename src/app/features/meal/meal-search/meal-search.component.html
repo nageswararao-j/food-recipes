@@ -1,0 +1,10 @@
+<h2>Meal Search:</h2>
+<ion-searchbar 
+    debounce="5000" 
+    showCancelButton="always" 
+    (ionChange)="ionChange($event)"
+    (keyup.enter)="onSumbit($event)"
+    (ionCancel)="onCancel()" >
+</ion-searchbar>
+<h3>{{loadingErrorMessage}}</h3><!--TODO //To be imporved-->
+<app-meal-card></app-meal-card>

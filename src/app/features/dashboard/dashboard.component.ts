@@ -12,4 +12,11 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /**
+   * Redirect to dashboard page
+   */
+  backToDashboard(): void {
+    window.location.href = '/dashboard';
+  }
+
 }

@@ -4,7 +4,7 @@
             <ion-row>
             <ion-col>
                 <div>
-                <ion-buttons slot="start">
+                <ion-buttons slot="start" (click)="backToDashboard()">
                     <ion-menu-button autoHide="false"></ion-menu-button>
                     <ion-title>Food Recipies Application</ion-title>
                 </ion-buttons>
@@ -16,6 +16,9 @@
 </ion-header>
 <ion-grid>
     <ion-row>
+        <ion-col>
+            <app-meal-search></app-meal-search>
+        </ion-col>
         <ion-col>
             <app-random-meal></app-random-meal>
         </ion-col>
