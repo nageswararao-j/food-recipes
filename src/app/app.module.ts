@@ -1,33 +1,29 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing.module';
-import { DashboardComponent } from './features/dashboard/dashboard.component';
-import { RandomMealComponent } from './features/meal/random-meal/random-meal.component';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { RouteReuseStrategy } from '@angular/router';
-import { MealSearchComponent } from './features/meal/meal-search/meal-search.component';
-import { MealCardComponent } from './features/meal/meal-card/meal-card.component';
-import { PageNotFoundComponent } from './features/page-not-found/page-not-found.component';
+import { PageNotFoundModule } from './features/page-not-found/page-not-found.module';
+import { DashboardModule } from './features/dashboard/dashboard.module';
+
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
-    RandomMealComponent,
-    MealSearchComponent,
-    MealCardComponent,
-    PageNotFoundComponent
-  ],
+    ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(), 
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    PageNotFoundModule,
+    DashboardModule
   ],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }

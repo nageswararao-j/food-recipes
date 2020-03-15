@@ -62,12 +62,13 @@ yar add -D wiremock-standalone
 But I have to use external API, So I added the  "proxyConfig": "./server/proxy/proxy.config.ts" on ng serve to access that API.
 In general, It is a good practice to start wiremock with webpack before running the dev-server and play with mock scenarios.
 If I don't get readily available API, then I would prefer the webpack & wire mock customisation.
-If you depend on the external APIs to run your application or run integration tests, then it become a chain environment. And you never know when your application or running of integration test will fail during the build pipelines.
+If you depend on the external APIs to run your application or run integration tests, then it becomes a chain environment. And you never know when your application or running of integration test will fail during the build pipelines.
 - Interceptors
 - Unit test
 - Integration tests
 - e2e tests
 - Router guards
 - Stop refreshing video when refreshing the random meal.
-- Cancel search 
-- Routes extractoin
+- Cancel event on search bar
+- Jenkins: artifacts publish to nexus, test/producion deployment
+- run prodution with proxy
