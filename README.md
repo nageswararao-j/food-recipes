@@ -37,6 +37,7 @@ Run `yarn build` to build the project. The build artifacts will be stored in the
 ## Running unit tests
 
 Run `yarn test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To run specific spec file use: `yarn test --include='<expresion matches the folder>/name.spec.ts' `
 
 ## Running end-to-end tests
 
