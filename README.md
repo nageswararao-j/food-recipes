@@ -41,7 +41,8 @@ To run specific spec file use: `yarn test filename.ts `
 
 ## Running end-to-end tests
 
-Run `yarn e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Deprecated: Run `yarn e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `yarn cypress` to execute e2e tests via [Cypress](https://www.cypress.io/).
 
 ## Further help
 
