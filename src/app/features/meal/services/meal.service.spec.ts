@@ -1,16 +1,17 @@
-import { TestBed } from '@angular/core/testing';
 
 import { MealService } from './meal.service';
+import { of } from 'rxjs';
 
 describe('MealService', () => {
   let service: MealService;
+  let httpClient;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(MealService);
+    httpClient = jest.fn(() => of());
+    service = new MealService(httpClient);
   });
 
   it('should be created', () => {
-    expect(service).toBeTruthy();
+    expect(service).toBeInstanceOf(MealService);
   });
 });

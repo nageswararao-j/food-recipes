@@ -6,7 +6,9 @@
       "jest",
       "node",
     ],
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "allowJs": true,
+    "esModuleInterop": true
   },
   "files": [
     "src/polyfills.ts"
