@@ -1,25 +1,21 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async } from '@angular/core/testing';
 
 import { MealCardComponent } from './meal-card.component';
+import { DomSanitizer } from '@angular/platform-browser';
 
 describe('MealCardComponent', () => {
   let component: MealCardComponent;
-  let fixture: ComponentFixture<MealCardComponent>;
+  const mockDomSanitizer: DomSanitizer = {} as any;
 
   beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ MealCardComponent ]
-    })
-    .compileComponents();
+    component = new MealCardComponent(mockDomSanitizer);
   }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(MealCardComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should sanitize a link', () => {
+    //TODO
   });
 });

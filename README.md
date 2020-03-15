@@ -64,8 +64,8 @@ But I have to use external API, So I added the  "proxyConfig": "./server/proxy/p
 In general, It is a good practice to start wiremock with webpack before running the dev-server and play with mock scenarios.
 If I don't get readily available API, then I would prefer the webpack & wire mock customisation.
 If you depend on the external APIs to run your application or run integration tests, then it becomes a chain environment. And you never know when your application or running of integration test will fail during the build pipelines.
-- Interceptors
-- Unit test
+- Interceptors (Http interceptor, CSRF interceptors etc.,)
+- Unit test (Parcially done)
 - Integration tests
 - e2e tests
 - Router guards
